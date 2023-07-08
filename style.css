@@ -1,0 +1,51 @@
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    /* causing error  */
+    border: 2px solid hsl(210, 45%, 91%);
+    border-radius: 45px;
+    background-color: #e9f0f7;
+}
+
+.clock {
+    /* border: 2px solid #ccc; */
+    border: 2px solid #c7d8eb;
+    border-radius: 30%;
+    width: 200px;
+    height: 200px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #fcfdfd;
+}
+
+
+.list-group {
+    margin-top: 20px;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #6ea7e7;
+    border-color: #6ea7e7;
+    margin-top: 18px;
+    border-radius: 10px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ef5867;
+    border-color: #ef5867;
+}
