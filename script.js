@@ -6,7 +6,7 @@ var alarmPeriodInput = document.getElementById('alarmPeriod');
 var setAlarmBtn = document.getElementById('setAlarmBtn');
 var alarmsList = document.getElementById('alarmsList');
 var alarms = [];
-var audio = null; 
+var audio = null; //declaration
 
 // Update clock every second
 setInterval(updateClock, 1000);
