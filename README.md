@@ -4,7 +4,7 @@ Created an alarm clock using only Vanilla JavaScript, without any libraries or f
 
 ### Features:
 ##### 1. Clock face
-- Clock showing the current time, updating it every second (seconds,mins,hrs)
+- Clock shows the current time, updating it every second (seconds,mins,hrs).
 
 ##### 2. Set Alarm
 - Provides input boxes to set an alarm (hr,min,sec, am/pm)
