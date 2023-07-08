@@ -6,6 +6,7 @@ var alarmPeriodInput = document.getElementById('alarmPeriod');
 var setAlarmBtn = document.getElementById('setAlarmBtn');
 var alarmsList = document.getElementById('alarmsList');
 var alarms = [];
+var audio = null; 
 
 // Update clock every second
 setInterval(updateClock, 1000);
@@ -78,27 +79,36 @@ function removeAlarm(alarm) {
     }
 }
 
-// Function to check alarms and display alert and play alarm if any alarm matches the current time (OG)
+// Function to check alarms and display alert and play alarm if any alarm matches the current time
 function checkAlarms(hours, minutes, seconds, period) {
     for (var i = 0; i < alarms.length; i++) {
         var alarm = alarms[i];
         if (alarm.hour === hours && alarm.minute === minutes && alarm.second === seconds && alarm.period === period) {
-            playAlertWithAudio('Alarm! Time to wake up!', '../Sound/alarmSound3.mp3');
+            playAlertWithAudio('Alarm! Time to wake up!', '../Sound/alarmSound2.wav');
             removeAlarm(alarm);
         }
     }
 }
 
 function playAlertWithAudio(message, audioPath) {
-    var audio = new Audio(audioPath); // Create an Audio object for the alarm sound
+    audio = new Audio(audioPath); // Create an Audio object for the alarm sound
     audio.play(); // Play the alarm sound
     setTimeout(function() {
         alert(message); // Show the alert message
+        stopAudio(); // Stop the audio when the alert is closed
     }, 200); // Adjust the delay (in milliseconds) to synchronize the audio and alert
 }
 
+function stopAudio() {
+    if (audio) {
+        audio.pause(); // Pause the audio
+        audio.currentTime = 0; // Reset the audio to the beginning
+        audio = null; // Reset the audio variable
+    }
+}
 
 // Function to add leading zero to single-digit numbers
 function addLeadingZero(number) {
     return number < 10 ? '0' + number : number;
 }
+
