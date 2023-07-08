@@ -1,8 +1,8 @@
-### Alarm-Clock
+## Alarm-Clock
 Created an alarm clock using only Vanilla JavaScript, without any libraries or frameworks for JavaScript.
 
 
-#### Features:
+### Features:
 ##### 1. Clock face
 - Clock showing the current time, updating it every second (seconds,mins,hrs)
 
