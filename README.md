@@ -9,7 +9,7 @@ Created an alarm clock using only Vanilla JavaScript, without any libraries or f
 ##### 2. Set Alarm
 - Provides input boxes to set an alarm (hr,min,sec, am/pm)
 - Once a user sets the time and clicks “Set Alarm” button, an alarm is added to the "Upcoming Alarms" list below.
-- When the alarm goes off, a JS alert pops in the browser, showing a message and playing a small alarm sound.
+- When the alarm goes off, a JS alert pops in the browser, showing a message and playing an alarm ring.
 
 ##### 3. Alarms list
 - Displays a list of all the alarms set by the user.
