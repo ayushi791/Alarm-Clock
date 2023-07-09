@@ -6,7 +6,7 @@ var alarmPeriodInput = document.getElementById('alarmPeriod');
 var setAlarmBtn = document.getElementById('setAlarmBtn');
 var alarmsList = document.getElementById('alarmsList');
 var alarms = [];
-var audio = null; //declaration
+var audio = null; // Declare audio as a global variable
 
 // Update clock every second
 setInterval(updateClock, 1000);
@@ -111,4 +111,3 @@ function stopAudio() {
 function addLeadingZero(number) {
     return number < 10 ? '0' + number : number;
 }
-
