@@ -79,7 +79,7 @@ function removeAlarm(alarm) {
     }
 }
 
-// Function to check alarms and display alert and play alarm if any alarm matches the current time
+// Function to check alarms and display alert and play alarm ring, if any alarm matches the current time
 function checkAlarms(hours, minutes, seconds, period) {
     for (var i = 0; i < alarms.length; i++) {
         var alarm = alarms[i];
