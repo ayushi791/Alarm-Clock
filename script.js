@@ -84,7 +84,7 @@ function checkAlarms(hours, minutes, seconds, period) {
     for (var i = 0; i < alarms.length; i++) {
         var alarm = alarms[i];
         if (alarm.hour === hours && alarm.minute === minutes && alarm.second === seconds && alarm.period === period) {
-            playAlertWithAudio('Alarm! Time to wake up!', '../Sound/alarmSound2.wav');
+            playAlertWithAudio('Alarm! Time to wake up!', 'alarmSound2.wav');
             removeAlarm(alarm);
         }
     }
